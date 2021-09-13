@@ -16,9 +16,9 @@ const Sidebar = ({isOpen, toggle}) => {
                 <CloseIcon />
             </Icon>
             <SidebarMenu>
-                <SidebarLink to='/'>Pizzas</SidebarLink>
-                <SidebarLink to='/'>Desserts</SidebarLink>
-                <SidebarLink to='/'>Full Menu</SidebarLink>
+                <SidebarLink to="/birthday-gifts">Birth Day Gifts</SidebarLink>
+                <SidebarLink to="/anniversary-gifts">Anniversary Gifts</SidebarLink>
+                <SidebarLink to='/'>Category 03</SidebarLink>
             </SidebarMenu>
             <SideBtnWrap>
                 <SidebarRoute to='/'>Order Now</SidebarRoute>

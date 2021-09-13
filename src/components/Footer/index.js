@@ -1,7 +1,6 @@
 import React from 'react';
 import { FaFacebook, FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { FooterContainer, FooterWrap, SocialMedia, SocialMediaWrap, SocialLogo, SocialIcons, SocialIcons2, SocialIconsLink, WhatsappLogo, WhatsappContact, ContactArea} from './FooterElements';
-import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -21,12 +20,6 @@ const Footer = () => {
                                 <SocialIconsLink href="/" target="_blank" aria-label="Youtube" rel="noopener noreferrer">
                                     <FaYoutube />
                                 </SocialIconsLink>
-                                {/*<WhatsappLogo>*/}
-                                {/*    <FaWhatsapp />*/}
-                                {/*</WhatsappLogo>*/}
-                                {/*<WhatsappContact>*/}
-                                {/*    <p>0771199903</p>*/}
-                                {/*</WhatsappContact>*/}
                             </SocialIcons>
                             <SocialIcons2>
                                 <WhatsappLogo>

@@ -1,23 +1,23 @@
 import React from 'react';
-import { BrowserRouter as Router } from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import {GlobalStyles} from "./globalStyles";
 import Hero from "./components/Hero";
-import Products from "./components/Products";
-import { productData, productDataTwo } from './components/Products/data';
-import Feature from "./components/Feature";
-import Footer from "./components/Footer";
+import Home from "./pages/home";
+import Category1 from "./pages/category1";
+import Category2 from "./pages/category2";
 
 function App() {
-  return (
-    <Router>
-        <GlobalStyles />
-        <Hero />
-        <Products heading='Most Popular Products' data={productData}/>
-        <Feature />
-        <Products heading='New Arrivals' data={productDataTwo}/>
-        <Footer />
-    </Router>
-  );
+    return (
+        <Router>
+            <GlobalStyles/>
+            <Hero/>
+            <Switch>
+                <Route path={"/"} exact component={Home}/>
+                <Route path={"/birthday-gifts"} component={Category1}/>
+                <Route path={"/anniversary-gifts"} component={Category2}/>
+            </Switch>
+        </Router>
+    );
 }
 
 export default App;

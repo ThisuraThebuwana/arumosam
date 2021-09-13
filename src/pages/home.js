@@ -1,6 +1,6 @@
 import React from 'react';
 import Products from "../components/Products";
-import {productData, productDataTwo} from "../components/Products/data";
+import {productData, productDataTwo} from "../data/data";
 import Feature from "../components/Feature";
 import Footer from "../components/Footer";
 

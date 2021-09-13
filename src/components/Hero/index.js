@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Navbar from "../Navbar";
-import {HeroContainer, HeroContent, HeroH1, HeroP, HeroBtn, HeroItems} from './HeroElements'
+import {HeroContainer, HeroContent, HeroH1, HeroP, HeroBtn, HeroItems, HeroIcon} from './HeroElements'
 import Sidebar from "../Sidebar";
 
 const Hero = () => {
@@ -16,9 +16,9 @@ const Hero = () => {
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <HeroContent>
                 <HeroItems>
-                    <HeroH1>The Art of Colorful Life</HeroH1>
-                    <HeroP>Ready in 60 seconds</HeroP>
-                    <HeroBtn>Place Order</HeroBtn>
+                    <HeroH1>ARUMOSAM</HeroH1>
+                    <HeroP>The Art of Colorful Life</HeroP>
+                    <HeroBtn>Place Order<HeroIcon/></HeroBtn>
                 </HeroItems>
             </HeroContent>
         </HeroContainer>

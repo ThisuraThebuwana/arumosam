@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaFacebook, FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa";
-import { FooterContainer, FooterWrap, SocialMedia, SocialMediaWrap, SocialLogo, SocialIcons, SocialIconsLink} from './FooterElements';
+import { FooterContainer, FooterWrap, SocialMedia, SocialMediaWrap, SocialLogo, SocialIcons, SocialIcons2, SocialIconsLink, WhatsappLogo, WhatsappContact, ContactArea} from './FooterElements';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -9,20 +10,33 @@ const Footer = () => {
                 <SocialMedia>
                     <SocialMediaWrap>
                         <SocialLogo to='/'>Pizza</SocialLogo>
-                        <SocialIcons>
-                            <SocialIconsLink href="/" target="_blank" aria-label="Facebook" rel="noopener noreferrer">
-                                <FaFacebook />
-                            </SocialIconsLink>
-                            <SocialIconsLink href="/" target="_blank" aria-label="Instagram" rel="noopener noreferrer">
-                                <FaInstagram />
-                            </SocialIconsLink>
-                            <SocialIconsLink href="/" target="_blank" aria-label="Youtube" rel="noopener noreferrer">
-                                <FaYoutube />
-                            </SocialIconsLink>
-                            <SocialIconsLink href="/" target="_blank" aria-label="Twitter" rel="noopener noreferrer">
-                                <FaWhatsapp />
-                            </SocialIconsLink>
-                        </SocialIcons>
+                        <ContactArea>
+                            <SocialIcons>
+                                <SocialIconsLink to={{ pathname: "https://www.facebook.com/Arumosam.lk" }} target="_blank">
+                                    <FaFacebook />
+                                </SocialIconsLink>
+                                <SocialIconsLink to={{ pathname: "https://www.instagram.com/arumosam.lk/" }} target="_blank">
+                                    <FaInstagram />
+                                </SocialIconsLink>
+                                <SocialIconsLink href="/" target="_blank" aria-label="Youtube" rel="noopener noreferrer">
+                                    <FaYoutube />
+                                </SocialIconsLink>
+                                {/*<WhatsappLogo>*/}
+                                {/*    <FaWhatsapp />*/}
+                                {/*</WhatsappLogo>*/}
+                                {/*<WhatsappContact>*/}
+                                {/*    <p>0771199903</p>*/}
+                                {/*</WhatsappContact>*/}
+                            </SocialIcons>
+                            <SocialIcons2>
+                                <WhatsappLogo>
+                                    <FaWhatsapp />
+                                </WhatsappLogo>
+                                <WhatsappContact>
+                                    <p>0771199903</p>
+                                </WhatsappContact>
+                            </SocialIcons2>
+                        </ContactArea>
                     </SocialMediaWrap>
                 </SocialMedia>
             </FooterWrap>

@@ -44,14 +44,39 @@ export const SocialLogo = styled(Link)`
   font-weight: bold;
 `
 
+export const ContactArea = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  //align-items: center;
+  height: 100px;
+`
+
 export const SocialIcons = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 240px;
+  width: 180px;
 `
 
-export const SocialIconsLink = styled.div`
+export const SocialIcons2 = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 180px;
+`
+
+export const SocialIconsLink = styled(Link)`
+  color: #fff;
+  font-size: 24px;
+`
+
+export const WhatsappLogo = styled.div`
+  color: #fff;
+  font-size: 24px;
+`
+
+export const WhatsappContact = styled.div`
   color: #fff;
   font-size: 24px;
 `

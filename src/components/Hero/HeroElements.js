@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import ImgBg from '../../images/pizza+3.jpg'
+import ImgBg from '../../images/bg5.jpg'
+import {FaFacebookMessenger} from "react-icons/fa";
 
 export const HeroContainer = styled.div`
   background: linear-gradient(to right, rgba(0,0,0,0.7)
@@ -39,7 +40,7 @@ export const HeroItems = styled.div`
 export const HeroH1 = styled.h1`
   font-size: clamp(2.5rem, 10vw, 5rem);
   margin-bottom: 1rem;
-  box-shadow: 3px 5px #e9ba23;
+  box-shadow: 3px 5px #800080;
   letter-spacing: 3px;
 `;
 
@@ -62,4 +63,9 @@ export const HeroBtn = styled.button`
     cursor: pointer;
     color: #000;
   }
+`;
+
+export const HeroIcon = styled(FaFacebookMessenger)`
+  font-size: 2rem;
+  transform: translate(50%, 25%);
 `;
